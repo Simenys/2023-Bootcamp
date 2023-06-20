@@ -1,0 +1,33 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    border: 1px solid black;
+    display: inline-block;
+}
+/* Static position */
+#staticMiddle {
+    background-color: blue;
+    position: static;
+    top: 100px;
+    /* No effect to changes for example top: 100px */
+}
+/* Relative position */
+#relativeMiddle {
+    background-color: blue;
+    position: relative;
+    top: 50px;
+    left: 100px;
+    /* Now changes like top and left make difference but other items stay in position */
+}
+/* Absolute Position */
+.absolute {
+    position: relative;
+}
+.absolute #absoluteMiddle {
+    background-color: blue;
+    position: absolute; /* in normal condition other div is behing middle one */
+    /* it is positioned to the closest positioned ancestor */
+    top: 5px;
+    left: 5px;
+}
