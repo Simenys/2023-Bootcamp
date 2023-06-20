@@ -21,13 +21,23 @@ div {
     /* Now changes like top and left make difference but other items stay in position */
 }
 /* Absolute Position */
-.absolute {
+#absolute {
     position: relative;
+    /* This is the closest relative position, and it must have position declared */
 }
-.absolute #absoluteMiddle {
+#absoluteMiddle {
     background-color: blue;
     position: absolute; /* in normal condition other div is behing middle one */
     /* it is positioned to the closest positioned ancestor */
-    top: 5px;
-    left: 5px;
+    top: 15px;
+    left: 70px;
 }
+/* Fixed Position */
+#fixedMiddle {
+    background-color: red;
+    position: fixed;
+    top: 600px;
+    left: 600px;
+    /* Red color on purpose. Div is fixed now depending on the body */
+}
+
