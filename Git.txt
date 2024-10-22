@@ -11,6 +11,8 @@ Type into terminal “git push” and then hit enter or "git psuh origin main"
 
 git clone - to move to another pc folder
 
+git pull to get updates to the folder
+
 
 cd /path/to/your/project
 git init
